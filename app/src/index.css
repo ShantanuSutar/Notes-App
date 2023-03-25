@@ -65,3 +65,12 @@ textarea:focus {
   align-items: center;
   justify-content: space-between;
 }
+
+.delete-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 1s ease;
+}
+.delete-icon :hover {
+  transform: translateY(-3px);
+}
