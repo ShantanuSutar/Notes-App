@@ -6,7 +6,9 @@ const AddNote = ({ handleAddNote }) => {
   const characterLength = 200;
 
   const handleChange = (e) => {
-    setNoteText(e.target.value);
+    if (characterLength - e.target.value.length >= 0) {
+      setNoteText(e.target.value);
+    }
   };
 
   const HandleSaveClick = () => {
