@@ -1,5 +1,5 @@
 import NotesList from "./Components/NotesList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 import Search from "./Components/Search";
 import Header from "./Components/Header";
@@ -35,6 +35,21 @@ function App() {
   const [searchText, setSearchText] = useState("");
 
   const [darkMode, setDarkMode] = useState(false);
+
+  //Retreiving the notes from local storage
+  useEffect(() => {
+    const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
+    console.log(savedNotes);
+    if (savedNotes) {
+      setNotes(savedNotes);
+    }
+  }, []); // Empty dependency means it will run only once when we load the page
+
+  //Saving the notes to local storage
+  useEffect(() => {
+    console.log(notes);
+    localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
+  }, [notes]);
 
   const addNote = (text) => {
     const date = new Date();
