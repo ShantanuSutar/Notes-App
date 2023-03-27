@@ -1,7 +1,15 @@
 
 # Notes App using React
 
-A notes app where users can enter text to each note and save it in local storage, delete an existing note, dynamically search among the notes and add character limit.
+A notes app built with React is a web application that allows users to create, store and manage their personal notes.
+
+React is a popular JavaScript library used for building user interfaces, and it can be a great choice for building a notes app due to its component-based architecture and ability to manage state.
+
+In a React notes app, users can create new notes by typing or pasting text into an input field and saving it to a database. They can also edit or delete existing notes, as well as organize them into categories or tags.
+
+React components such as forms, buttons, and input fields can be used to create a clean and intuitive user interface for the notes app. React's state management system can be used to keep track of the notes in the app and any changes made to them.
+
+Overall, a notes app built with React can be a useful tool for anyone looking to keep track of their thoughts, ideas, and to-do lists in a convenient and customizable way.
 
 
 ## Live URL
