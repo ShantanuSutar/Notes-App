@@ -40,7 +40,7 @@ React Hooks, components, props, useState(), useffect(), handling HTML input in R
 
 ## Feedback
 
-If you have any feedback, please reach out to us at shantanusutar17@gmail.com
+If you have any feedback, please reach out to me at shantanusutar17@gmail.com
 
 
 ## Features
